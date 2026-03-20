@@ -54,26 +54,28 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero" class="active">Início</a></li>
-            <li><a href="#about">Sobre Nós</a></li>
-            <li><a href="#plans">Planos</a></li>
-            <li><a href="#services">Vantagens</a></li>
-            <li><a href="#portfolio">Funcionalidades</a></li>
-            <li><a href="#why-us">FAQ</a></li>
-
-            <li><a href="#contact">Contatos</a></li>
+            <li>
+              <a href="#hero" class="active" data-i18n="nav_home">Início</a>
+            </li>
+            <li><a href="#about" data-i18n="nav_about">Sobre Nós</a></li>
+            <li><a href="#plans" data-i18n="nav_plans">Planos</a></li>
+            <li><a href="#services" data-i18n="nav_services">Vantagens</a></li>
+            <li>
+              <a href="#portfolio" data-i18n="nav_portfolio">Funcionalidades</a>
+            </li>
+            <li><a href="#why-us" data-i18n="nav_faq">FAQ</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contatos</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a href="login.html" class="btn-getstarted">
-          <i class="bi bi-person-circle"></i> Entrar
-        </a>
+        <a href="login.html" class="btn-getstarted" data-i18n="nav_login"
+          >Entrar</a
+        >
       </div>
     </header>
 
     <main class="main">
-      <!-- Hero Section -->
       <section id="hero" class="hero section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row align-items-center gy-5">
@@ -81,18 +83,26 @@
               <div class="hero-content">
                 <div class="hero-tag" data-aos="fade-up" data-aos-delay="250">
                   <span class="tag-dot"></span>
-                  <span class="tag-text">Soluções Premium para Frotas</span>
+                  <span class="tag-text" data-i18n="hero_tag"
+                    >Soluções Premium para Frotas</span
+                  >
                 </div>
 
                 <h1
                   class="hero-headline"
                   data-aos="fade-up"
                   data-aos-delay="300"
+                  data-i18n="hero_title"
                 >
                   Gerencie a Sua Frota com Total Controlo e Eficiência
                 </h1>
 
-                <p class="hero-text" data-aos="fade-up" data-aos-delay="350">
+                <p
+                  class="hero-text"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                  data-i18n="hero_text"
+                >
                   Plataforma completa para gestão de frotas, reservas e
                   condutores. Reduza custos, aumente a produtividade e tome
                   decisões com base em dados reais.
@@ -100,7 +110,7 @@
 
                 <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
                   <a href="register.html" class="cta-button">
-                    <span>Registar</span>
+                    <span data-i18n="hero_btn_register">Registar</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
                   <a
@@ -109,7 +119,7 @@
                     data-gallery="hero-video"
                   >
                     <i class="bi bi-play-circle"></i>
-                    <span>Ver Vídeo</span>
+                    <span data-i18n="hero_btn_video">Ver Vídeo</span>
                   </a>
                 </div>
               </div>
@@ -127,17 +137,19 @@
                   </div>
                   <div class="stat-info">
                     <span class="stat-value">232K+</span>
-                    <span class="stat-title">Veículos Geridos</span>
+                    <span class="stat-title" data-i18n="hero_stat_vehicles"
+                      >Veículos Geridos</span
+                    >
                   </div>
                 </div>
 
                 <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
-                  <div class="stat-icon-wrap">
-                    <i class="bi bi-people"></i>
-                  </div>
+                  <div class="stat-icon-wrap"><i class="bi bi-people"></i></div>
                   <div class="stat-info">
                     <span class="stat-value">204K+</span>
-                    <span class="stat-title">Utilizadores Activos</span>
+                    <span class="stat-title" data-i18n="hero_stat_users"
+                      >Utilizadores Activos</span
+                    >
                   </div>
                 </div>
 
@@ -147,7 +159,9 @@
                   </div>
                   <div class="stat-info">
                     <span class="stat-value">R$ 897K</span>
-                    <span class="stat-title">Total Economizado</span>
+                    <span class="stat-title" data-i18n="hero_stat_saved"
+                      >Total Economizado</span
+                    >
                   </div>
                 </div>
 
@@ -161,7 +175,9 @@
                   </div>
                   <div class="stat-info">
                     <span class="stat-value">99.9%</span>
-                    <span class="stat-title">Disponibilidade</span>
+                    <span class="stat-title" data-i18n="hero_stat_uptime"
+                      >Disponibilidade</span
+                    >
                   </div>
                 </div>
               </div>
@@ -169,7 +185,6 @@
           </div>
         </div>
       </section>
-      <!-- /Hero Section -->
 
       <section class="features-slider-section">
         <div class="container">
@@ -658,7 +673,6 @@
         </div>
       </section>
 
-      <!-- About Section -->
       <section id="about" class="about section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-5 align-items-center">
@@ -690,7 +704,9 @@
                     data-purecounter-duration="1"
                     >12</span
                   >
-                  <span class="text">Anos de<br />Experiência</span>
+                  <span class="text" data-i18n="about_years"
+                    >Anos de<br />Experiência</span
+                  >
                 </div>
                 <div class="shape-pattern"></div>
               </div>
@@ -702,14 +718,18 @@
               data-aos-delay="300"
             >
               <div class="about-content">
-                <div class="section-subtitle">Quem Somos</div>
-                <h2>Inovando para o Sucesso da Sua Frota com Tecnologia</h2>
-                <p class="lead-text">
+                <div class="section-subtitle" data-i18n="about_subtitle">
+                  Quem Somos
+                </div>
+                <h2 data-i18n="about_title">
+                  Inovando para o Sucesso da Sua Frota com Tecnologia
+                </h2>
+                <p class="lead-text" data-i18n="about_lead">
                   Somos uma plataforma dedicada à gestão inteligente de frotas,
                   desenvolvida para empresas que querem reduzir custos, aumentar
                   a eficiência e tomar decisões com base em dados reais.
                 </p>
-                <p class="mb-4 description">
+                <p class="mb-4 description" data-i18n="about_desc">
                   A nossa missão é simplificar a gestão do dia a dia da sua
                   frota — desde o controlo de veículos e condutores até aos
                   relatórios financeiros e alertas automáticos. Tudo numa
@@ -719,19 +739,19 @@
                 <div class="features-grid">
                   <div class="feature-card">
                     <i class="bi bi-check-circle-fill"></i>
-                    <span>Fácil de usar</span>
+                    <span data-i18n="about_feat1">Fácil de usar</span>
                   </div>
                   <div class="feature-card">
                     <i class="bi bi-check-circle-fill"></i>
-                    <span>Dados em tempo real</span>
+                    <span data-i18n="about_feat2">Dados em tempo real</span>
                   </div>
                   <div class="feature-card">
                     <i class="bi bi-check-circle-fill"></i>
-                    <span>Equipa especializada</span>
+                    <span data-i18n="about_feat3">Equipa especializada</span>
                   </div>
                   <div class="feature-card">
                     <i class="bi bi-check-circle-fill"></i>
-                    <span>Suporte 24/7</span>
+                    <span data-i18n="about_feat4">Suporte 24/7</span>
                   </div>
                 </div>
               </div>
@@ -739,19 +759,15 @@
           </div>
         </div>
       </section>
-      <!-- /About Section -->
 
-      <!-- Services Section -->
       <section id="services" class="services section">
-        <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Vantagens da Nossa Plataforma</h2>
-          <p>
+          <h2 data-i18n="services_title">Vantagens da Nossa Plataforma</h2>
+          <p data-i18n="services_sub">
             Tudo o que precisa para gerir a sua frota de forma eficiente, num só
             lugar.
           </p>
         </div>
-        <!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row g-4">
@@ -762,11 +778,9 @@
               data-aos-delay="100"
             >
               <div class="service-card">
-                <div class="icon-wrapper">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <h3>Localização em Tempo Real</h3>
-                <p>
+                <div class="icon-wrapper"><i class="bi bi-geo-alt"></i></div>
+                <h3 data-i18n="service1_title">Localização em Tempo Real</h3>
+                <p data-i18n="service1_text">
                   Acompanhe em tempo real a localização exacta de todos os
                   veículos da sua frota, a qualquer hora e em qualquer lugar.
                 </p>
@@ -783,30 +797,29 @@
                 <div class="icon-wrapper">
                   <i class="bi bi-bar-chart-line"></i>
                 </div>
-                <h3>Relatórios e Análises</h3>
-                <p>
+                <h3 data-i18n="service2_title">Relatórios e Análises</h3>
+                <p data-i18n="service2_text">
                   Relatórios completos para melhor análise e apoio nas tomadas
                   de decisões críticas para melhorar a eficiência da frota.
                 </p>
               </div>
             </div>
 
-            <!-- Card 3 - Featured -->
+            <!-- Card 3 -->
             <div
               class="col-lg-4 col-md-6"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <div class="service-card featured">
+              <div class="service-card">
                 <div class="featured-badge">
                   <i class="bi bi-star-fill"></i>
-                  <span>Popular</span>
                 </div>
                 <div class="icon-wrapper">
                   <i class="bi bi-calendar-check"></i>
                 </div>
-                <h3>Reservas Online</h3>
-                <p>
+                <h3 data-i18n="service3_title">Reservas Online</h3>
+                <p data-i18n="service3_text">
                   Sistema de agendamento integrado que permite gerir todas as
                   reservas de veículos de forma simples e automatizada.
                 </p>
@@ -823,8 +836,8 @@
                 <div class="icon-wrapper">
                   <i class="bi bi-speedometer2"></i>
                 </div>
-                <h3>Controlo de Quilometragem</h3>
-                <p>
+                <h3 data-i18n="service4_title">Controlo de Quilometragem</h3>
+                <p data-i18n="service4_text">
                   Aceda à quilometragem de todos os veículos da sua frota com
                   poucos cliques e mantenha o histórico actualizado.
                 </p>
@@ -838,11 +851,9 @@
               data-aos-delay="200"
             >
               <div class="service-card">
-                <div class="icon-wrapper">
-                  <i class="bi bi-bell"></i>
-                </div>
-                <h3>Alertas Automáticos</h3>
-                <p>
+                <div class="icon-wrapper"><i class="bi bi-bell"></i></div>
+                <h3 data-i18n="service5_title">Alertas Automáticos</h3>
+                <p data-i18n="service5_text">
                   Receba notificações de excesso de velocidade, frenagem brusca,
                   ignição ligada, vencimento de seguro e muito mais.
                 </p>
@@ -856,11 +867,9 @@
               data-aos-delay="300"
             >
               <div class="service-card">
-                <div class="icon-wrapper">
-                  <i class="bi bi-wallet2"></i>
-                </div>
-                <h3>Controlo de Gastos</h3>
-                <p>
+                <div class="icon-wrapper"><i class="bi bi-wallet2"></i></div>
+                <h3 data-i18n="service6_title">Controlo de Gastos</h3>
+                <p data-i18n="service6_text">
                   Monitorize despesas com multas, abastecimento, manutenções e
                   outras eventualidades num painel centralizado.
                 </p>
@@ -874,39 +883,44 @@
               <div class="col-6 col-md-3">
                 <div class="stat-item">
                   <span class="stat-number">232K+</span>
-                  <span class="stat-label">Veículos Geridos</span>
+                  <span class="stat-label" data-i18n="stat_label_vehicles"
+                    >Veículos Geridos</span
+                  >
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="stat-item">
                   <span class="stat-number">204K+</span>
-                  <span class="stat-label">Utilizadores Activos</span>
+                  <span class="stat-label" data-i18n="stat_label_users"
+                    >Utilizadores Activos</span
+                  >
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="stat-item">
                   <span class="stat-number">R$ 897K</span>
-                  <span class="stat-label">Total Economizado</span>
+                  <span class="stat-label" data-i18n="stat_label_saved"
+                    >Total Economizado</span
+                  >
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="stat-item">
                   <span class="stat-number">99.9%</span>
-                  <span class="stat-label">Disponibilidade</span>
+                  <span class="stat-label" data-i18n="stat_label_uptime"
+                    >Disponibilidade</span
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Services Section -->
 
-      <!-- Portfolio Section -->
       <section id="portfolio" class="portfolio section">
-        <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Funcionalidades</h2>
-          <p>
+          <h2 data-i18n="portfolio_title">Funcionalidades</h2>
+          <p data-i18n="portfolio_sub">
             Conheça algumas das funcionalidades e projectos desenvolvidos na
             nossa plataforma.
           </p>
@@ -916,25 +930,38 @@
           <!-- Tabs -->
           <div class="filters-wrapper">
             <ul class="portfolio-filters" id="rsTabs">
-              <li class="rs-tab filter-active" data-tab="controlo">
+              <li
+                class="rs-tab filter-active"
+                data-tab="controlo"
+                data-i18n="tab_controlo"
+              >
                 Ao Controlo
               </li>
-              <li class="rs-tab" data-tab="reserva">Reserva</li>
-              <li class="rs-tab" data-tab="negocio">O Negócio</li>
-              <li class="rs-tab" data-tab="gestao">Gestão</li>
-              <li class="rs-tab" data-tab="nuvem">Nuvem</li>
+              <li class="rs-tab" data-tab="reserva" data-i18n="tab_reserva">
+                Reserva
+              </li>
+              <li class="rs-tab" data-tab="negocio" data-i18n="tab_negocio">
+                O Negócio
+              </li>
+              <li class="rs-tab" data-tab="gestao" data-i18n="tab_gestao">
+                Gestão
+              </li>
+              <li class="rs-tab" data-tab="nuvem" data-i18n="tab_nuvem">
+                Nuvem
+              </li>
             </ul>
           </div>
-          <!-- BLOCO ESTILO RENTSYST: Tabs + Texto + Coverflow -->
+
           <div class="rentsyst-block mb-5" data-aos="fade-up">
-            <!-- Tab Content -->
             <div class="rs-content">
               <!-- Controlo -->
               <div class="rs-panel active" data-panel="controlo">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2>Controlo total da sua frota de veículos</h2>
-                    <p class="fs-6">
+                    <h2 data-i18n="panel_controlo_title">
+                      Controlo total da sua frota de veículos
+                    </h2>
+                    <p class="fs-6" data-i18n="panel_controlo_text">
                       O rastreador GPS preciso permite acompanhar todos os
                       movimentos dos seus veículos. Tenha controlo remoto para
                       abrir/fechar portas, ligar/bloquear o motor, monitorizar a
@@ -951,7 +978,7 @@
                       </div>
                       <div class="rs-cf-slide">
                         <img
-                          src="assets/img/portfo lio/portfolio-2.webp"
+                          src="assets/img/portfolio/portfolio-2.webp"
                           alt="Controlo 2"
                         />
                       </div>
@@ -991,8 +1018,10 @@
               <div class="rs-panel" data-panel="reserva">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2>Trabalho eficiente com pedidos e reservas</h2>
-                    <p class="fs-6">
+                    <h2 data-i18n="panel_reserva_title">
+                      Trabalho eficiente com pedidos e reservas
+                    </h2>
+                    <p class="fs-6" data-i18n="panel_reserva_text">
                       As secções de Cronograma e Plano Diário ajudam a
                       distribuir e gerir pedidos, controlando todas as reservas
                       em calendário. Delegue tarefas e acompanhe a programação
@@ -1049,8 +1078,10 @@
               <div class="rs-panel" data-panel="negocio">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2>Gestão de todos os processos do negócio</h2>
-                    <p class="fs-6">
+                    <h2 data-i18n="panel_negocio_title">
+                      Gestão de todos os processos do negócio
+                    </h2>
+                    <p class="fs-6" data-i18n="panel_negocio_text">
                       Rastreie e controle todas as transacções financeiras —
                       internas e externas. Optimize o seu tempo, concentre-se
                       nos resultados e tome decisões com base em dados reais da
@@ -1107,8 +1138,10 @@
               <div class="rs-panel" data-panel="gestao">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2>Planeador competente para a sua frota</h2>
-                    <p class="fs-6">
+                    <h2 data-i18n="panel_gestao_title">
+                      Planeador competente para a sua frota
+                    </h2>
+                    <p class="fs-6" data-i18n="panel_gestao_text">
                       Gira o seu tempo com competência. Processe todos os
                       pedidos, entregue os veículos no prazo e receba alertas
                       automáticos de manutenção, seguros e revisões.
@@ -1158,8 +1191,8 @@
               <div class="rs-panel" data-panel="nuvem">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2>Solução 100% em nuvem</h2>
-                    <p class="fs-6">
+                    <h2 data-i18n="panel_nuvem_title">Solução 100% em nuvem</h2>
+                    <p class="fs-6" data-i18n="panel_nuvem_text">
                       Não é necessário instalar nada. Aceda à plataforma de
                       qualquer dispositivo, em qualquer lugar do mundo, bastando
                       ter ligação à Internet.
@@ -1206,108 +1239,152 @@
               </div>
             </div>
           </div>
-          <!-- FIM BLOCO RENTSYST -->
+
+          <!-- CTA -->
+          <div class="cta-section" data-aos="zoom-in" data-aos-delay="300">
+            <div class="cta-content">
+              <span class="cta-label">
+                <i class="bi bi-lightning-charge-fill"></i>
+                <span data-i18n="cta_label">Pronto para Começar?</span>
+              </span>
+              <h3 data-i18n="cta_title">
+                Gerencie a sua frota com mais controlo e eficiência
+              </h3>
+              <p data-i18n="cta_text">
+                Tenha controlo total dos seus veículos, reservas, manutenção e
+                relatórios numa única plataforma simples, rápida e segura.
+              </p>
+              <div class="cta-buttons">
+                <a href="#register" class="btn-cta-primary">
+                  <span data-i18n="cta_btn_register">Registar</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="#video" class="btn-cta-secondary">
+                  <i class="bi bi-play-circle"></i>
+                  <span data-i18n="cta_btn_video">Ver Vídeo</span>
+                </a>
+              </div>
+            </div>
+            <div class="cta-decoration">
+              <div class="floating-shape shape-1"></div>
+              <div class="floating-shape shape-2"></div>
+              <div class="floating-shape shape-3"></div>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- /Portfolio Section -->
 
       <section id="plans" class="plans section">
         <div class="container">
           <div class="container section-title" data-aos="fade-up">
-            <h2>Planos</h2>
-            <p>Escolha o plano ideal para gerir a sua frota com eficiência</p>
+            <h2 data-i18n="plans_title">Planos</h2>
+            <p data-i18n="plans_sub">
+              Escolha o plano ideal para gerir a sua frota com eficiência
+            </p>
           </div>
 
           <div class="row g-4">
             <!-- PLANO BÁSICO -->
             <div class="col-lg-4">
               <div class="plan-card">
-                <h4>Básico</h4>
-                <h2>Grátis</h2>
-                <p>Ideal para pequenas frotas</p>
-
+                <h4 data-i18n="plan1_name">Básico</h4>
+                <h2 data-i18n="plan1_price">Grátis</h2>
+                <p data-i18n="plan1_desc">Ideal para pequenas frotas</p>
                 <ul>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Até 5 veículos
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan1_f1">Até 5 veículos</span>
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Controle básico de
-                    infrações
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan1_f2"
+                      >Controle básico de infrações</span
+                    >
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Registo de
-                    condutores
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan1_f3">Registo de condutores</span>
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Relatórios simples
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan1_f4">Relatórios simples</span>
                   </li>
                   <li>
-                    <i class="bi bi-x-circle-fill"></i> Suporte prioritário
+                    <i class="bi bi-x-circle-fill"></i>
+                    <span data-i18n="plan1_f5">Suporte prioritário</span>
                   </li>
                 </ul>
-
-                <a href="#" class="btn-plan">Começar</a>
+                <a href="#" class="btn-plan" data-i18n="plan1_btn">Começar</a>
               </div>
             </div>
 
             <!-- PLANO PROFISSIONAL -->
             <div class="col-lg-4">
               <div class="plan-card">
-                <h4>Profissional</h4>
-                <h2>15.000 €<span>/mês</span></h2>
-                <p>Para empresas em crescimento</p>
-
+                <h4 data-i18n="plan2_name">Profissional</h4>
+                <h2 data-i18n="plan2_price">15.000 €<span>/mês</span></h2>
+                <p data-i18n="plan2_desc">Para empresas em crescimento</p>
                 <ul>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Até 50 veículos
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan2_f1">Até 50 veículos</span>
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Gestão completa de
-                    multas
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan2_f2">Gestão completa de multas</span>
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Relatórios avançados
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan2_f3">Relatórios avançados</span>
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Histórico detalhado
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan2_f4">Histórico detalhado</span>
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Suporte prioritário
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan2_f5">Suporte prioritário</span>
                   </li>
                 </ul>
-
-                <a href="#" class="btn-plan">Escolher Plano</a>
+                <a href="#" class="btn-plan" data-i18n="plan2_btn"
+                  >Escolher Plano</a
+                >
               </div>
             </div>
 
             <!-- PLANO EMPRESARIAL -->
             <div class="col-lg-4">
               <div class="plan-card">
-                <h4>Empresarial</h4>
-                <h2>Sob Consulta</h2>
-                <p>Para grandes frotas</p>
-
+                <h4 data-i18n="plan3_name">Empresarial</h4>
+                <h2 data-i18n="plan3_price">Sob Consulta</h2>
+                <p data-i18n="plan3_desc">Para grandes frotas</p>
                 <ul>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Veículos ilimitados
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan3_f1">Veículos ilimitados</span>
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Monitoramento em
-                    tempo real
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan3_f2"
+                      >Monitoramento em tempo real</span
+                    >
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Integração com GPS
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan3_f3">Integração com GPS</span>
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Dashboard avançado
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan3_f4">Dashboard avançado</span>
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill"></i> Suporte dedicado
-                    24/7
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span data-i18n="plan3_f5">Suporte dedicado 24/7</span>
                   </li>
                 </ul>
-
-                <a href="#" class="btn-plan">Fale Conosco</a>
+                <a href="#" class="btn-plan" data-i18n="plan3_btn"
+                  >Fale Conosco</a
+                >
               </div>
             </div>
           </div>
@@ -1317,23 +1394,21 @@
       <section id="why-us" class="faq padding-section">
         <div class="container">
           <div class="text-center title-group mb-5">
-            <h3>Dúvidas Frequentes</h3>
+            <h3 data-i18n="faq_title">Dúvidas Frequentes</h3>
             <hr class="divisor" />
-            <p>
-              Ainda tem dúvida sobre o Rent? Veja algumas dúvidas mais comuns:
+            <p data-i18n="faq_sub">
+              Ainda tem dúvida sobre o RentoGoo? Veja algumas dúvidas mais
+              comuns:
             </p>
           </div>
 
           <div class="row mb-5">
-            <!-- IMAGEM -->
-
-            <!-- ACCORDION -->
             <div
               class="col-md-12 d-flex align-items-center"
               data-aos="fade-left"
             >
               <div class="accordion w-100" id="accordionFaq">
-                <!-- ITEM 1 (ABERTO) -->
+                <!-- ITEM 1 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button
@@ -1342,17 +1417,18 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne"
                     >
-                      O sistema consegue identificar o condutor responsável pela
-                      multa?
+                      <span data-i18n="faq1_q"
+                        >O sistema consegue identificar o condutor responsável
+                        pela multa?</span
+                      >
                     </button>
                   </h2>
-
                   <div
                     id="collapseOne"
                     class="accordion-collapse collapse show"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body">
+                    <div class="accordion-body" data-i18n="faq1_a">
                       Durante o cadastro da infração, o sistema faz uma leitura
                       do banco de dados das viagens cadastradas pelos
                       condutores, identificando quem é responsável pela infração
@@ -1370,16 +1446,17 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseTwo"
                     >
-                      Posso cadastrar vários veículos?
+                      <span data-i18n="faq2_q"
+                        >Posso cadastrar vários veículos?</span
+                      >
                     </button>
                   </h2>
-
                   <div
                     id="collapseTwo"
                     class="accordion-collapse collapse"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body">
+                    <div class="accordion-body" data-i18n="faq2_a">
                       Sim, o sistema permite o cadastro de múltiplos veículos
                       para melhor gestão da frota.
                     </div>
@@ -1395,18 +1472,210 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseThree"
                     >
-                      O sistema funciona em tempo real?
+                      <span data-i18n="faq3_q"
+                        >O sistema funciona em tempo real?</span
+                      >
                     </button>
                   </h2>
-
                   <div
                     id="collapseThree"
                     class="accordion-collapse collapse"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body">
+                    <div class="accordion-body" data-i18n="faq3_a">
                       Sim, todas as informações são atualizadas em tempo real,
                       permitindo um controle eficiente.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ITEM 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                    >
+                      <span data-i18n="faq4_q"
+                        >Posso aceder à plataforma pelo telemóvel?</span
+                      >
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFaq"
+                  >
+                    <div class="accordion-body" data-i18n="faq4_a">
+                      Sim, a plataforma é totalmente responsiva e acessível em
+                      qualquer dispositivo — computador, tablet ou telemóvel —
+                      bastando ter ligação à Internet.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ITEM 5 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                    >
+                      <span data-i18n="faq5_q"
+                        >Como funciona o período de teste gratuito?</span
+                      >
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFaq"
+                  >
+                    <div class="accordion-body" data-i18n="faq5_a">
+                      Oferecemos 14 dias de teste gratuito sem necessidade de
+                      cartão de crédito. Durante esse período tem acesso a todas
+                      as funcionalidades do plano escolhido.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ITEM 6 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix"
+                    >
+                      <span data-i18n="faq6_q"
+                        >Os meus dados estão seguros na plataforma?</span
+                      >
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFaq"
+                  >
+                    <div class="accordion-body" data-i18n="faq6_a">
+                      Sim, utilizamos encriptação SSL em todas as comunicações e
+                      os dados são armazenados em servidores seguros com backups
+                      automáticos diários.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ITEM 7 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven"
+                    >
+                      <span data-i18n="faq7_q"
+                        >Posso integrar a plataforma com outros sistemas?</span
+                      >
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSeven"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFaq"
+                  >
+                    <div class="accordion-body" data-i18n="faq7_a">
+                      Sim, disponibilizamos uma API completa que permite
+                      integrar a plataforma com ERP, sistemas de faturação, GPS
+                      externos e outros softwares de gestão.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ITEM 8 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseEight"
+                    >
+                      <span data-i18n="faq8_q"
+                        >Como posso cancelar a minha subscrição?</span
+                      >
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseEight"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFaq"
+                  >
+                    <div class="accordion-body" data-i18n="faq8_a">
+                      Pode cancelar a sua subscrição a qualquer momento
+                      diretamente nas definições da conta, sem qualquer
+                      penalização. Os dados ficam disponíveis por 30 dias após o
+                      cancelamento.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ITEM 9 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseNine"
+                    >
+                      <span data-i18n="faq9_q"
+                        >Quantos utilizadores posso adicionar à minha
+                        conta?</span
+                      >
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseNine"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFaq"
+                  >
+                    <div class="accordion-body" data-i18n="faq9_a">
+                      No plano Starter pode adicionar até 5 utilizadores. No
+                      plano Profissional até 20 e no plano Empresarial o número
+                      de utilizadores é ilimitado.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ITEM 10 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTen"
+                    >
+                      <span data-i18n="faq10_q"
+                        >O suporte técnico está disponível em português?</span
+                      >
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTen"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFaq"
+                  >
+                    <div class="accordion-body" data-i18n="faq10_a">
+                      Sim, o nosso suporte técnico está disponível em português
+                      e inglês, por email e chat, de segunda a sexta das 9h às
+                      18h. O plano Empresarial inclui suporte dedicado 24/7.
                     </div>
                   </div>
                 </div>
@@ -1416,17 +1685,14 @@
         </div>
       </section>
 
-      <!-- Testimonials Section -->
       <section id="testimonials" class="testimonials section">
-        <!-- Título da Seção -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Depoimentos</h2>
-          <p>
+          <h2 data-i18n="testimonials_title">Depoimentos</h2>
+          <p data-i18n="testimonials_sub">
             Veja o que nossos clientes dizem sobre nossos serviços e
             experiências conosco
           </p>
         </div>
-        <!-- Fim do Título da Seção -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row">
@@ -1460,15 +1726,17 @@
                   />
                   <span class="avatar-count">+2.5k</span>
                 </div>
-
                 <div class="sidebar-content">
                   <span class="satisfied-badge">
-                    <i class="bi bi-heart-fill"></i> Clientes Satisfeitos
+                    <i class="bi bi-heart-fill"></i>
+                    <span data-i18n="testimonials_badge"
+                      >Clientes Satisfeitos</span
+                    >
                   </span>
-
-                  <h3>Descubra o que nossos clientes dizem sobre nós</h3>
-
-                  <p>
+                  <h3 data-i18n="testimonials_sidebar_title">
+                    Descubra o que nossos clientes dizem sobre nós
+                  </h3>
+                  <p data-i18n="testimonials_sidebar_text">
                     Trabalhamos para oferecer sempre a melhor experiência,
                     garantindo qualidade, eficiência e satisfação em cada
                     serviço prestado.
@@ -1476,9 +1744,8 @@
                 </div>
               </div>
             </div>
-            <!-- Fim Sidebar -->
 
-            <!-- Slider de Depoimentos -->
+            <!-- Slider -->
             <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
               <div class="testimonials-carousel swiper init-swiper">
                 <script type="application/json" class="swiper-config">
@@ -1495,11 +1762,7 @@
                       "el": ".swiper-pagination",
                       "clickable": true
                     },
-                    "breakpoints": {
-                      "768": {
-                        "slidesPerView": 2
-                      }
-                    }
+                    "breakpoints": { "768": { "slidesPerView": 2 } }
                   }
                 </script>
 
@@ -1509,17 +1772,17 @@
                     <div class="testimonial-card">
                       <div class="card-top">
                         <div class="stars">
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </div>
                         <span class="quote-mark"
                           ><i class="bi bi-quote"></i
                         ></span>
                       </div>
-                      <p class="testimonial-text">
+                      <p class="testimonial-text" data-i18n="testimonial1_text">
                         Excelente sistema! Facilitou muito a gestão da nossa
                         frota e o controle de infrações.
                       </p>
@@ -1531,8 +1794,10 @@
                           loading="lazy"
                         />
                         <div class="author-details">
-                          <h5>Sophia Anderson</h5>
-                          <span>Diretora de Marketing</span>
+                          <h5 data-i18n="testimonial1_name">Sophia Anderson</h5>
+                          <span data-i18n="testimonial1_role"
+                            >Diretora de Marketing</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -1543,17 +1808,17 @@
                     <div class="testimonial-card">
                       <div class="card-top">
                         <div class="stars">
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </div>
                         <span class="quote-mark"
                           ><i class="bi bi-quote"></i
                         ></span>
                       </div>
-                      <p class="testimonial-text">
+                      <p class="testimonial-text" data-i18n="testimonial2_text">
                         Plataforma muito intuitiva e eficiente. Recomendo para
                         qualquer empresa que queira organização.
                       </p>
@@ -1565,8 +1830,10 @@
                           loading="lazy"
                         />
                         <div class="author-details">
-                          <h5>Marcus Webb</h5>
-                          <span>Líder Técnico</span>
+                          <h5 data-i18n="testimonial2_name">Marcus Webb</h5>
+                          <span data-i18n="testimonial2_role"
+                            >Líder Técnico</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -1577,17 +1844,17 @@
                     <div class="testimonial-card">
                       <div class="card-top">
                         <div class="stars">
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </div>
                         <span class="quote-mark"
                           ><i class="bi bi-quote"></i
                         ></span>
                       </div>
-                      <p class="testimonial-text">
+                      <p class="testimonial-text" data-i18n="testimonial3_text">
                         Uma solução completa que melhorou bastante nossos
                         processos internos.
                       </p>
@@ -1599,8 +1866,10 @@
                           loading="lazy"
                         />
                         <div class="author-details">
-                          <h5>Elena Rodriguez</h5>
-                          <span>Fundadora de Startup</span>
+                          <h5 data-i18n="testimonial3_name">Elena Rodriguez</h5>
+                          <span data-i18n="testimonial3_role"
+                            >Fundadora de Startup</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -1611,17 +1880,17 @@
                     <div class="testimonial-card">
                       <div class="card-top">
                         <div class="stars">
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </div>
                         <span class="quote-mark"
                           ><i class="bi bi-quote"></i
                         ></span>
                       </div>
-                      <p class="testimonial-text">
+                      <p class="testimonial-text" data-i18n="testimonial4_text">
                         Interface moderna e fácil de usar. Atendimento
                         excelente.
                       </p>
@@ -1633,8 +1902,10 @@
                           loading="lazy"
                         />
                         <div class="author-details">
-                          <h5>James Mitchell</h5>
-                          <span>Designer de Produto</span>
+                          <h5 data-i18n="testimonial4_name">James Mitchell</h5>
+                          <span data-i18n="testimonial4_role"
+                            >Designer de Produto</span
+                          >
                         </div>
                       </div>
                     </div>
@@ -1645,17 +1916,17 @@
                     <div class="testimonial-card">
                       <div class="card-top">
                         <div class="stars">
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </div>
                         <span class="quote-mark"
                           ><i class="bi bi-quote"></i
                         ></span>
                       </div>
-                      <p class="testimonial-text">
+                      <p class="testimonial-text" data-i18n="testimonial5_text">
                         Sistema confiável e muito útil para o dia a dia da
                         empresa.
                       </p>
@@ -1667,36 +1938,30 @@
                           loading="lazy"
                         />
                         <div class="author-details">
-                          <h5>Olivia Chen</h5>
-                          <span>Gerente de Operações</span>
+                          <h5 data-i18n="testimonial5_name">Olivia Chen</h5>
+                          <span data-i18n="testimonial5_role"
+                            >Gerente de Operações</span
+                          >
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <!-- Fim Slider -->
           </div>
         </div>
       </section>
 
-      <!-- /Testimonials Section -->
-
-      <!-- Contact Section -->
-
       <section id="contact" class="contact section">
-        <!-- Título da Seção -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Contato</h2>
-          <p>
+          <h2 data-i18n="contact_title">Contato</h2>
+          <p data-i18n="contact_sub">
             Entre em contato conosco e descubra como podemos ajudar você a
             alcançar seus objetivos
           </p>
         </div>
-        <!-- Fim do Título -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-5 align-items-stretch">
@@ -1706,12 +1971,12 @@
                 <div class="panel-header">
                   <span class="section-badge">
                     <i class="bi bi-chat-dots-fill"></i>
-                    Fale Conosco
+                    <span data-i18n="contact_badge">Fale Conosco</span>
                   </span>
-
-                  <h3>Vamos transformar sua ideia em realidade</h3>
-
-                  <p>
+                  <h3 data-i18n="contact_heading">
+                    Vamos transformar sua ideia em realidade
+                  </h3>
+                  <p data-i18n="contact_desc">
                     Nossa equipe está pronta para ajudar você com soluções
                     eficientes e personalizadas.
                   </p>
@@ -1723,29 +1988,33 @@
                       <i class="bi bi-envelope-paper-fill"></i>
                     </div>
                     <div class="method-details">
-                      <span class="method-label">Email</span>
+                      <span class="method-label" data-i18n="contact_label_email"
+                        >Email</span
+                      >
                       <a href="mailto:support@example.com"
                         >support@example.com</a
                       >
                     </div>
                   </div>
-
                   <div class="method-item">
-                    <div class="method-icon">
-                      <i class="bi bi-headset"></i>
-                    </div>
+                    <div class="method-icon"><i class="bi bi-headset"></i></div>
                     <div class="method-details">
-                      <span class="method-label">Telefone</span>
+                      <span class="method-label" data-i18n="contact_label_phone"
+                        >Telefone</span
+                      >
                       <a href="tel:+15558901234">+1 (555) 890-1234</a>
                     </div>
                   </div>
-
                   <div class="method-item">
                     <div class="method-icon">
                       <i class="bi bi-pin-map-fill"></i>
                     </div>
                     <div class="method-details">
-                      <span class="method-label">Endereço</span>
+                      <span
+                        class="method-label"
+                        data-i18n="contact_label_address"
+                        >Endereço</span
+                      >
                       <span>1847 Oak Avenue, Portland, OR 97201</span>
                     </div>
                   </div>
@@ -1754,20 +2023,26 @@
                 <div class="stats-strip">
                   <div class="stat-item">
                     <span class="stat-number">98%</span>
-                    <span class="stat-text">Satisfação</span>
+                    <span class="stat-text" data-i18n="contact_stat1"
+                      >Satisfação</span
+                    >
                   </div>
                   <div class="stat-item">
                     <span class="stat-number">24/7</span>
-                    <span class="stat-text">Suporte</span>
+                    <span class="stat-text" data-i18n="contact_stat2"
+                      >Suporte</span
+                    >
                   </div>
                   <div class="stat-item">
                     <span class="stat-number">3.2k</span>
-                    <span class="stat-text">Projetos</span>
+                    <span class="stat-text" data-i18n="contact_stat3"
+                      >Projetos</span
+                    >
                   </div>
                 </div>
 
                 <div class="social-connect">
-                  <span>Siga-nos</span>
+                  <span data-i18n="contact_follow">Siga-nos</span>
                   <div class="social-icons">
                     <a href="#"><i class="bi bi-facebook"></i></a>
                     <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -1777,18 +2052,15 @@
                 </div>
               </div>
             </div>
-            <!-- Fim Painel -->
 
             <!-- Formulário -->
             <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
               <div class="form-card">
                 <div class="form-card-header">
-                  <div class="header-icon">
-                    <i class="bi bi-send-fill"></i>
-                  </div>
+                  <div class="header-icon"><i class="bi bi-send-fill"></i></div>
                   <div class="header-text">
-                    <h4>Envie uma Mensagem</h4>
-                    <p>
+                    <h4 data-i18n="contact_form_title">Envie uma Mensagem</h4>
+                    <p data-i18n="contact_form_sub">
                       Preencha o formulário e responderemos em até 24 horas.
                     </p>
                   </div>
@@ -1802,7 +2074,7 @@
                   <div class="row g-4">
                     <div class="col-md-6">
                       <div class="input-group-custom">
-                        <label>Seu Nome</label>
+                        <label data-i18n="contact_field_name">Seu Nome</label>
                         <div class="input-wrapper">
                           <i class="bi bi-person"></i>
                           <input
@@ -1817,7 +2089,7 @@
 
                     <div class="col-md-6">
                       <div class="input-group-custom">
-                        <label>Email</label>
+                        <label data-i18n="contact_field_email">Email</label>
                         <div class="input-wrapper">
                           <i class="bi bi-envelope"></i>
                           <input
@@ -1832,7 +2104,7 @@
 
                     <div class="col-12">
                       <div class="input-group-custom">
-                        <label>Assunto</label>
+                        <label data-i18n="contact_field_subject">Assunto</label>
                         <div class="input-wrapper">
                           <i class="bi bi-chat-square-text"></i>
                           <input
@@ -1847,7 +2119,9 @@
 
                     <div class="col-12">
                       <div class="input-group-custom">
-                        <label>Sua Mensagem</label>
+                        <label data-i18n="contact_field_message"
+                          >Sua Mensagem</label
+                        >
                         <div class="input-wrapper textarea-wrapper">
                           <i class="bi bi-pencil-square"></i>
                           <textarea
@@ -1864,102 +2138,84 @@
                   <div class="form-actions">
                     <div class="loading">Carregando</div>
                     <div class="error-message"></div>
-                    <div class="sent-message">
+                    <div class="sent-message" data-i18n="contact_sent">
                       Sua mensagem foi enviada com sucesso. Obrigado!
                     </div>
-
                     <button type="submit" class="btn-submit">
-                      <span>Enviar Mensagem</span>
+                      <span data-i18n="contact_btn_send">Enviar Mensagem</span>
                       <i class="bi bi-arrow-right-circle-fill"></i>
                     </button>
-
                     <div class="secure-note">
                       <i class="bi bi-lock-fill"></i>
-                      <span>Seus dados estão seguros e protegidos</span>
+                      <span data-i18n="contact_secure"
+                        >Seus dados estão seguros e protegidos</span
+                      >
                     </div>
                   </div>
                 </form>
               </div>
             </div>
-            <!-- Fim Formulário -->
           </div>
         </div>
       </section>
-
-      <!-- /Contact Section -->
     </main>
 
-    <footer id="footer" class="footer light-background">
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center mb-4">
+    <footer id="footer" class="footer-custom">
+      <div class="container">
+        <div
+          class="footer-top d-flex justify-content-between align-items-center flex-wrap"
+        >
+          <!-- Logo -->
+          <div class="footer-left">
+            <a href="index.html" class="logo">
               <span class="sitename">RentoGoo</span>
             </a>
+          </div>
 
-            <p>
-              Soluções modernas para impulsionar o seu negócio com eficiência e
-              inovação.
-            </p>
+          <!-- Links -->
+          <div class="footer-links d-flex gap-4">
+            <a href="#about" data-i18n="footer_about">Sobre</a>
+            <a href="#faq" data-i18n="footer_faq">FAQ</a>
+            <a href="#contact" data-i18n="footer_contact">Contactos</a>
+            <a href="#" data-i18n="footer_privacy">Política de Privacidade</a>
+            <a href="#" data-i18n="footer_terms">Termos e Condições</a>
+          </div>
 
-            <div class="social-links d-flex mt-4">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-tiktok"></i></a>
-              <a href="#"><i class="bi bi-pinterest"></i></a>
+          <!-- Social -->
+          <div class="social-links d-flex gap-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom d-flex justify-content-between align-items-center flex-wrap"
+        >
+          <!-- Idioma -->
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="choose-lang" id="langToggle">
+              <img src="https://flagcdn.com/w20/pt.png" id="currentFlag" />
+              <span id="currentLang">Português</span>
+              <i class="bi bi-chevron-down"></i>
+            </button>
+            <div class="lang-menu">
+              <a href="#" data-lang="pt">
+                <img src="https://flagcdn.com/w20/pt.png" /> Português
+              </a>
+              <a href="#" data-lang="en">
+                <img src="https://flagcdn.com/w20/gb.png" /> English
+              </a>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Loja</h4>
-            <ul>
-              <li><a href="#">Novidades</a></li>
-              <li><a href="#">Mais Vendidos</a></li>
-              <li><a href="#">Promoções</a></li>
-              <li><a href="#">Coleção Masculina</a></li>
-              <li><a href="#">Coleção Feminina</a></li>
-              <li><a href="#">Acessórios</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Atendimento</h4>
-            <ul>
-              <li><a href="#">Contato</a></li>
-              <li><a href="#">Perguntas Frequentes</a></li>
-              <li><a href="#">Envio e Devoluções</a></li>
-              <li><a href="#">Guia de Tamanhos</a></li>
-              <li><a href="#">Rastrear Pedido</a></li>
-              <li><a href="#">Cartões Presente</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Navegação</h4>
-            <ul>
-              <li><a href="#hero">Início</a></li>
-              <li><a href="#about">Sobre Nós</a></li>
-              <li><a href="#plans">Planos</a></li>
-              <li><a href="#services">Vantagens</a></li>
-              <li><a href="#portfolio">Funcionalidades</a></li>
-              <li><a href="#why-us">FAQ</a></li>
-              <li><a href="#contact">Contactos</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <h4>Fique Atualizado</h4>
-            <p>
-              Receba novidades, promoções e dicas exclusivas diretamente no seu
-              email.
-            </p>
+          <!-- Copyright -->
+          <div class="footer-legal text-end">
+            <small data-i18n="footer_copy"
+              >© 2026 RentoGoo. Todos os direitos reservados.</small
+            >
           </div>
         </div>
-      </div>
-
-      <div class="container footer-bottom">
-        <p>© Copyright RentoGoo. Todos os direitos reservados.</p>
       </div>
     </footer>
 
@@ -2161,6 +2417,76 @@
           });
         }
       });
+    </script>
+
+    <script>
+      const toggle = document.getElementById("langToggle");
+      const dropdown = document.getElementById("langDropdown");
+      const currentFlag = document.getElementById("currentFlag");
+      const currentLang = document.getElementById("currentLang");
+      let translations = {};
+
+      const langData = {
+        pt: { label: "Português", flag: "https://flagcdn.com/w20/pt.png" },
+        en: { label: "English", flag: "https://flagcdn.com/w20/gb.png" },
+      };
+
+      // Abrir/fechar dropdown
+      toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        dropdown.classList.toggle("active");
+      });
+
+      // Fechar ao clicar fora
+      document.addEventListener("click", (e) => {
+        if (!dropdown.contains(e.target) && !toggle.contains(e.target)) {
+          dropdown.classList.remove("active");
+        }
+      });
+
+      // Selecionar idioma
+      document.querySelectorAll(".lang-menu a").forEach((item) => {
+        item.addEventListener("click", (e) => {
+          e.preventDefault();
+          const lang = item.getAttribute("data-lang");
+          localStorage.setItem("lang", lang);
+          updateLangUI(lang);
+          setLanguage(lang);
+          dropdown.classList.remove("active");
+        });
+      });
+
+      // Atualizar botão (flag + texto + activo)
+      function updateLangUI(lang) {
+        currentFlag.src = langData[lang].flag;
+        currentLang.innerText = langData[lang].label;
+        document
+          .querySelectorAll(".lang-menu a")
+          .forEach((el) => el.classList.remove("active"));
+        document
+          .querySelector(`.lang-menu a[data-lang="${lang}"]`)
+          .classList.add("active");
+      }
+
+      // Aplicar traduções ao DOM
+      function setLanguage(lang) {
+        const t = translations[lang];
+        if (!t) return;
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (t[key] !== undefined) el.innerHTML = t[key];
+        });
+      }
+
+      fetch("assets/js/translations.json")
+        .then((res) => res.json())
+        .then((data) => {
+          translations = data;
+          const savedLang = localStorage.getItem("lang") || "pt";
+          updateLangUI(savedLang);
+          setLanguage(savedLang);
+        })
+        .catch((err) => console.error("Erro ao carregar lang.json:", err));
     </script>
   </body>
 </html>
