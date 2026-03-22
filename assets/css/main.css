@@ -894,7 +894,8 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: 120px 0 80px;
+  padding: 40px 0 80px;
+
   position: relative;
   overflow: hidden;
   background: linear-gradient(

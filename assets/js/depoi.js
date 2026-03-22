@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
           clickable: true,
         },
         breakpoints: {
-          768: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
         },
       });
     });
