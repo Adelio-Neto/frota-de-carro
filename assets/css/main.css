@@ -7667,3 +7667,32 @@ section,
     margin: 0 auto 30px auto;
   }
 }
+
+.hero-video-wrapper {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  min-height: 60vh;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Overlay escuro */
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  font-size: 60px;
+  color: #fff;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.video-overlay:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
