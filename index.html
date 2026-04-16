@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>RentoGoo</title>
+    <title>RentalGoo</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -48,7 +48,7 @@
           href="index.html"
           class="logo d-flex align-items-center me-auto me-xl-0"
         >
-          <h1 class="sitename">RentoGoo</h1>
+          <h1 class="sitename">RentalGoo</h1>
           <span>.</span>
         </a>
 
@@ -103,7 +103,7 @@
 
                 <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
                   <a href="register.html" class="cta-button">
-                    <span data-i18n="hero_btn_register"> Cadastrar-se</span>
+                    <span data-i18n="hero_btn_register"> Registrar-se</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
@@ -1193,13 +1193,13 @@
                 relatórios numa única plataforma simples, rápida e segura.
               </p>
               <div class="cta-buttons">
-                <a href="#register" class="btn-cta-primary">
-                  <span data-i18n="cta_btn_register"> Cadastrar-se</span>
+                <a href="register.html" class="btn-cta-primary">
+                  <span> Registrar-se</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
-                <a href="#video" class="btn-cta-secondary">
-                  <i class="bi bi-play-circle"></i>
-                  <span data-i18n="cta_btn_video">Ver Vídeo</span>
+                <a href="login.html" class="btn-cta-secondary">
+                  <i class="bi bi-arrow-right"></i>
+                  <span>Entrar</span>
                 </a>
               </div>
             </div>
@@ -1351,7 +1351,7 @@
             <h3 data-i18n="faq_title">Dúvidas Frequentes</h3>
             <hr class="divisor" />
             <p data-i18n="faq_sub">
-              Ainda tem dúvida sobre o RentoGoo? Veja algumas dúvidas mais
+              Ainda tem dúvida sobre o RentalGoo? Veja algumas dúvidas mais
               comuns:
             </p>
           </div>
@@ -1401,7 +1401,7 @@
                       data-bs-target="#collapseTwo"
                     >
                       <span data-i18n="faq2_q"
-                        >Posso cadastrar vários veículos?</span
+                        >Posso Registrar vários veículos?</span
                       >
                     </button>
                   </h2>
@@ -1889,205 +1889,70 @@
         </div>
       </section>
 
-      <section id="contact" class="contact section">
+      <section id="services" class="services section">
         <div class="container section-title" data-aos="fade-up">
-          <h2 data-i18n="contact_title">Contato</h2>
-          <p data-i18n="contact_sub">
-            Entre em contato conosco e descubra como podemos ajudar você a
-            alcançar seus objetivos
+          <h2>Suporte</h2>
+          <p>
+            Nossa equipe está pronta para ajudar você a resolver qualquer
+            dúvida.
           </p>
         </div>
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-5 align-items-stretch">
-            <!-- Painel de Informações -->
-            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
-              <div class="info-panel">
-                <div class="panel-header">
-                  <span class="section-badge">
-                    <i class="bi bi-chat-dots-fill"></i>
-                    <span data-i18n="contact_badge">Fale Conosco</span>
-                  </span>
-                  <h3 data-i18n="contact_heading">
-                    Vamos transformar sua ideia em realidade
-                  </h3>
-                  <p data-i18n="contact_desc">
-                    Nossa equipe está pronta para ajudar você com soluções
-                    eficientes e personalizadas.
-                  </p>
+        <div
+          id="suport"
+          class="container"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="row g-4">
+            <!-- Card 1 - WhatsApp -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card text-center">
+                <div class="icon-wrapper mx-auto text-center">
+                  <i class="bi bi-whatsapp"></i>
                 </div>
-
-                <div class="contact-methods">
-                  <div class="method-item">
-                    <div class="method-icon">
-                      <i class="bi bi-envelope-paper-fill"></i>
-                    </div>
-                    <div class="method-details">
-                      <span class="method-label" data-i18n="contact_label_email"
-                        >Email</span
-                      >
-                      <a href="mailto:support@example.com"
-                        >support@example.com</a
-                      >
-                    </div>
-                  </div>
-                  <div class="method-item">
-                    <div class="method-icon"><i class="bi bi-headset"></i></div>
-                    <div class="method-details">
-                      <span class="method-label" data-i18n="contact_label_phone"
-                        >Telefone</span
-                      >
-                      <a href="tel:+15558901234">+1 (555) 890-1234</a>
-                    </div>
-                  </div>
-                  <div class="method-item">
-                    <div class="method-icon">
-                      <i class="bi bi-pin-map-fill"></i>
-                    </div>
-                    <div class="method-details">
-                      <span
-                        class="method-label"
-                        data-i18n="contact_label_address"
-                        >Endereço</span
-                      >
-                      <span>1847 Oak Avenue, Portland, OR 97201</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="stats-strip">
-                  <div class="stat-item">
-                    <span class="stat-number">98%</span>
-                    <span class="stat-text" data-i18n="contact_stat1"
-                      >Satisfação</span
-                    >
-                  </div>
-                  <div class="stat-item">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-text" data-i18n="contact_stat2"
-                      >Suporte</span
-                    >
-                  </div>
-                  <div class="stat-item">
-                    <span class="stat-number">3.2k</span>
-                    <span class="stat-text" data-i18n="contact_stat3"
-                      >Projetos</span
-                    >
-                  </div>
-                </div>
-
-                <div class="social-connect">
-                  <span data-i18n="contact_follow">Siga-nos</span>
-                  <div class="social-icons">
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                  </div>
-                </div>
+                <h3>WhatsApp</h3>
+                <p>
+                  Fale diretamente com nossa equipe e receba atendimento rápido
+                  e prático.
+                </p>
+                <a
+                  href="https://wa.me/244942450840"
+                  target="_blank"
+                  class="d-block text-center"
+                >
+                  Iniciar Conversa
+                </a>
               </div>
             </div>
 
-            <!-- Formulário -->
-            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
-              <div class="form-card">
-                <div class="form-card-header">
-                  <div class="header-icon"><i class="bi bi-send-fill"></i></div>
-                  <div class="header-text">
-                    <h4 data-i18n="contact_form_title">Envie uma Mensagem</h4>
-                    <p data-i18n="contact_form_sub">
-                      Preencha o formulário e responderemos em até 24 horas.
-                    </p>
-                  </div>
+            <!-- Card 2 - Email -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card text-center">
+                <div class="icon-wrapper mx-auto text-center">
+                  <i class="bi bi-envelope"></i>
                 </div>
-
-                <form
-                  action="forms/contact.php"
-                  method="post"
-                  class="php-email-form"
+                <h3>Email</h3>
+                <p>Envie sua dúvida ou problema detalhado para nossa equipe.</p>
+                <a
+                  href="mailto:suporte@avesell.com"
+                  target="_blank"
+                  class="d-block text-center"
                 >
-                  <div class="row g-4">
-                    <div class="col-md-6">
-                      <div class="input-group-custom">
-                        <label data-i18n="contact_field_name">Seu Nome</label>
-                        <div class="input-wrapper">
-                          <i class="bi bi-person"></i>
-                          <input
-                            type="text"
-                            name="name"
-                            placeholder="Seu nome"
-                            required
-                          />
-                        </div>
-                      </div>
-                    </div>
+                  suporte@avesell.com
+                </a>
+              </div>
+            </div>
 
-                    <div class="col-md-6">
-                      <div class="input-group-custom">
-                        <label data-i18n="contact_field_email">Email</label>
-                        <div class="input-wrapper">
-                          <i class="bi bi-envelope"></i>
-                          <input
-                            type="email"
-                            name="email"
-                            placeholder="seu@email.com"
-                            required
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="input-group-custom">
-                        <label data-i18n="contact_field_subject">Assunto</label>
-                        <div class="input-wrapper">
-                          <i class="bi bi-chat-square-text"></i>
-                          <input
-                            type="text"
-                            name="subject"
-                            placeholder="Como podemos ajudar?"
-                            required
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="input-group-custom">
-                        <label data-i18n="contact_field_message"
-                          >Sua Mensagem</label
-                        >
-                        <div class="input-wrapper textarea-wrapper">
-                          <i class="bi bi-pencil-square"></i>
-                          <textarea
-                            name="message"
-                            rows="5"
-                            placeholder="Descreva sua necessidade..."
-                            required
-                          ></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-actions">
-                    <div class="loading">Carregando</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message" data-i18n="contact_sent">
-                      Sua mensagem foi enviada com sucesso. Obrigado!
-                    </div>
-                    <button type="submit" class="btn-submit">
-                      <span data-i18n="contact_btn_send">Enviar Mensagem</span>
-                      <i class="bi bi-arrow-right-circle-fill"></i>
-                    </button>
-                    <div class="secure-note">
-                      <i class="bi bi-lock-fill"></i>
-                      <span data-i18n="contact_secure"
-                        >Seus dados estão seguros e protegidos</span
-                      >
-                    </div>
-                  </div>
-                </form>
+            <!-- Card 3 - Horário -->
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card text-center">
+                <div class="icon-wrapper mx-auto text-center">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <h3>Horário de Atendimento</h3>
+                <p>Segunda a sexta, das 9h às 18h (exceto feriados).</p>
+                <a href="#" class="d-block text-center"> Ver horários </a>
               </div>
             </div>
           </div>
@@ -2103,7 +1968,7 @@
           <!-- Logo -->
           <div class="footer-left">
             <a href="index.html" class="logo">
-              <span class="sitename">RentoGoo</span>
+              <span class="sitename">RentalGoo</span>
             </a>
           </div>
 
@@ -2148,7 +2013,7 @@
           <!-- Copyright -->
           <div class="footer-legal text-end">
             <small data-i18n="footer_copy"
-              >© 2026 RentoGoo. Todos os direitos reservados.</small
+              >© 2026 RentalGoo. Todos os direitos reservados.</small
             >
           </div>
         </div>
