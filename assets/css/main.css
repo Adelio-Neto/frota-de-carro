@@ -7696,3 +7696,142 @@ section,
   background: rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
 }
+
+/* ══════════════════════════════════════════════
+   LIGHTBOX
+   ══════════════════════════════════════════════ */
+
+.cf-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.92);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+  padding: 20px;
+}
+
+.cf-lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cf-lightbox-inner {
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cf-lightbox img {
+  max-width: 100%;
+  max-height: 85vh;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+  transform: scale(0.92);
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: block;
+}
+
+.cf-lightbox.is-open img {
+  transform: scale(1);
+}
+
+.cf-lightbox-close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+  line-height: 1;
+}
+
+.cf-lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.28);
+  transform: scale(1.1);
+}
+
+/* Navegar no lightbox */
+.cf-lightbox-prev,
+.cf-lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  z-index: 2;
+}
+.cf-lightbox-prev {
+  left: -56px;
+}
+.cf-lightbox-next {
+  right: -56px;
+}
+
+.cf-lightbox-prev:hover,
+.cf-lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.cf-lightbox-prev svg,
+.cf-lightbox-next svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.5;
+}
+
+@media (max-width: 768px) {
+  .cf-lightbox-prev {
+    left: 0;
+  }
+  .cf-lightbox-next {
+    right: 0;
+  }
+  .cf-lightbox-close {
+    top: -48px;
+    right: 0;
+  }
+}
+
+/* contador de slides no lightbox */
+.cf-lightbox-counter {
+  position: absolute;
+  bottom: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
