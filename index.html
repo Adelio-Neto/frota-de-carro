@@ -48,8 +48,9 @@
           href="index.html"
           class="logo d-flex align-items-center me-auto me-xl-0"
         >
-          <h1 class="sitename">RentalGoo</h1>
-          <span>.</span>
+          <h1 class="sitenames">
+            <img src="assets/img/RENTALGOO_LOGO.png" alt="" />
+          </h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -878,20 +879,21 @@
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <!-- Tabs -->
+          <!-- Tabs -->
           <div class="filters-wrapper">
             <ul class="portfolio-filters" id="rsTabs">
-              <li class="rs-tab filter-active" data-tab="controlo">Clientes</li>
-              <li class="rs-tab" data-tab="reserva">Relatórios</li>
-              <li class="rs-tab" data-tab="negocio">Empresa</li>
-              <li class="rs-tab" data-tab="frete">Tipos de Danos</li>
-              <li class="rs-tab" data-tab="nuvem">Utilizadores</li>
+              <li class="rs-tab filter-active" data-tab="clientes">Clientes</li>
+              <li class="rs-tab" data-tab="relatorios">Relatórios</li>
+              <li class="rs-tab" data-tab="contratos">Contratos</li>
+              <li class="rs-tab" data-tab="checkin">Check-in / Check-out</li>
+              <li class="rs-tab" data-tab="frotas">Frotas de carro</li>
             </ul>
           </div>
 
           <div class="rentsyst-block mb-5" data-aos="fade-up">
             <div class="rs-content">
               <!-- Clientes -->
-              <div class="rs-panel active" data-panel="controlo">
+              <div class="rs-panel active" data-panel="clientes">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
                     <h2>Gestão completa de clientes</h2>
@@ -934,14 +936,14 @@
               </div>
 
               <!-- Relatórios -->
-              <div class="rs-panel" data-panel="reserva">
+              <div class="rs-panel" data-panel="relatorios">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2>Relatórios e análises</h2>
+                    <h2>Relatórios e análises inteligentes</h2>
                     <p class="fs-6">
-                      Transforme dados em decisões estratégicas. Gere relatórios
-                      detalhados sobre faturação, utilização da frota,
-                      desempenho e muito mais para otimizar o seu negócio.
+                      Acompanhe o desempenho do seu negócio com relatórios
+                      detalhados de faturação, ocupação de frota, lucros e
+                      estatísticas em tempo real.
                     </p>
                   </div>
                   <div class="col-lg-8">
@@ -975,15 +977,15 @@
                 </div>
               </div>
 
-              <!-- Empresa -->
-              <div class="rs-panel" data-panel="negocio">
+              <!-- Contratos -->
+              <div class="rs-panel" data-panel="contratos">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2>Configuração da empresa</h2>
+                    <h2>Gestão de contratos</h2>
                     <p class="fs-6">
-                      Configure e personalize os dados da sua empresa. Mantenha
-                      todas as informações organizadas e alinhadas com a
-                      identidade do seu negócio.
+                      Crie, armazene e gerencie contratos de forma digital.
+                      Automatize assinaturas, prazos e condições para maior
+                      segurança e organização.
                     </p>
                   </div>
                   <div class="col-lg-8">
@@ -1020,15 +1022,15 @@
                 </div>
               </div>
 
-              <!-- Tipos de Danos -->
-              <div class="rs-panel" data-panel="frete">
+              <!-- checkin-->
+              <div class="rs-panel" data-panel="checkin">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2>Tipos de danos</h2>
+                    <h2>Check-in e Check-out rápido</h2>
                     <p class="fs-6">
-                      Registe e categorize danos de forma padronizada. Melhore o
-                      controlo sobre incidentes, reduza prejuízos e tenha mais
-                      clareza na gestão de responsabilidades.
+                      Simplifique o processo de entrega e devolução de veículos
+                      com registo automático de horários, estado do veículo e
+                      documentação associada.
                     </p>
                   </div>
                   <div class="col-lg-8">
@@ -1062,15 +1064,15 @@
                 </div>
               </div>
 
-              <!-- Utilizadores -->
-              <div class="rs-panel" data-panel="nuvem">
+              <!-- Frotas -->
+              <div class="rs-panel" data-panel="frotas">
                 <div class="row align-items-center g-4">
                   <div class="col-lg-4">
-                    <h2>Utilizadores da empresa</h2>
+                    <h2>Gestão de frota de veículos</h2>
                     <p class="fs-6">
-                      Controle acessos e permissões da sua equipa. Garanta
-                      segurança, organização e eficiência ao definir quem pode
-                      ver e fazer o quê dentro do sistema.
+                      Controle total da sua frota com informações sobre
+                      disponibilidade, manutenção, localização e estado de cada
+                      veículo em tempo real.
                     </p>
                   </div>
                   <div class="col-lg-8">
@@ -1156,7 +1158,8 @@
             <!-- PLANO BÁSICO -->
             <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
               <div class="pricing-item">
-                <h3 data-i18n="plan1_name">Básico</h3>
+                <h3>Plano Básico</h3>
+
                 <h4 class="price">
                   0 €
                   <span>/mês</span>
@@ -1165,29 +1168,46 @@
                 <ul>
                   <li>
                     <i class="bi bi-check"></i>
-                    <span data-i18n="plan1_f1">Até 5 veículos</span>
+                    <span>Até 5 veículos</span>
                   </li>
+
                   <li>
                     <i class="bi bi-check"></i>
-                    <span data-i18n="plan1_f2"
-                      >Controle básico de infrações</span
-                    >
+                    <span>Gestão de veículos</span>
                   </li>
+
                   <li>
                     <i class="bi bi-check"></i>
-                    <span data-i18n="plan1_f3">Registo de condutores</span>
+                    <span>Gestão de clientes</span>
                   </li>
+
                   <li>
                     <i class="bi bi-check"></i>
-                    <span data-i18n="plan1_f4">Relatórios simples</span>
+                    <span>Gestão de tipos de danos</span>
                   </li>
-                  <li class="na">
-                    <i class="bi bi-x"></i>
-                    <span data-i18n="plan1_f5">Suporte prioritário</span>
+
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Contratos básicos</span>
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Check-in / Check-out</span>
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Dashboard simples</span>
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Relatórios básicos</span>
                   </li>
                 </ul>
 
-                <a href="#" class="buy-btn" data-i18n="plan1_btn">Começar</a>
+                <a href="#" class="buy-btn">Escolher Plano</a>
               </div>
             </div>
             <!-- End Pricing Item -->
@@ -1263,7 +1283,7 @@
                 </ul>
 
                 <a href="#" class="buy-btn" data-i18n="plan3_btn"
-                  >Fale Conosco</a
+                  >Escolher Plano</a
                 >
               </div>
             </div>

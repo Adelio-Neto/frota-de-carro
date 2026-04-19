@@ -7835,3 +7835,56 @@ section,
   font-weight: 500;
   white-space: nowrap;
 }
+
+/* LOGO BASE */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* TÍTULO/CONTAINER DO LOGO */
+.logo .sitenames {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* IMAGEM DO LOGO */
+.logo .sitenames img {
+  height: 60px;
+  width: 200px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   DESKTOP GRANDE
+========================= */
+@media (min-width: 1200px) {
+  .logo .sitenames img {
+    height: 60px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 991px) {
+  .logo .sitenames img {
+    height: 45px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 576px) {
+  .logo {
+    justify-content: center;
+  }
+
+  .logo .sitenames img {
+    height: 38px;
+  }
+}
